@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-blue: #00274d;
+    --golden-yellow: #f9d71c;
+    --red: #e63946;
+    --gray-dark: #333;
+    --gray-light: #e5e5e5;
+}
+
+/* Custom styles */
+body {
+    background-color: var(--dark-blue);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--dark-blue);
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide:nth-child(1) {
+    background-image: url('path/to/your/hero-image1.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('path/to/your/hero-image2.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('path/to/your/hero-image3.jpg');
+}
+
+/* Primary button styles */
+.bg-golden-yellow {
+    background-color: var(--golden-yellow);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.bg-red-500 {
+    background-color: var(--red);
+}
+
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
+.bg-gray-800 {
+    background-color: var(--gray-dark);
+}
+
+.text-gray-200 {
+    color: var(--gray-light);
+}
